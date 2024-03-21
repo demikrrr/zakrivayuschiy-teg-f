@@ -17,4 +17,149 @@
 .page {
   min-inline-size: 320px;
   min-block-size: 100dvb;
+  font-family: var(--main-font), sans-serif;
+  font-size: 18px;
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  background-size: cover;
+  background-attachment: fixed;
+  color: var(--main-color);
+  font-variation-settings: 'wgth' var(--font-weight_text);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: minmax(375px, 700px);
+  justify-content: center;
+}
+
+.header {
+  display: grid;
+  align-content: end;
+  height: 368px;
+  font-family: var(--accent-font);
+  font-weight: normal;
+  background-color: var(--background-color);
+  margin-block-start: 100px;
+  margin-block-end: 100px;
+  border: 2px solid var(--main-color);
+}
+
+.header_logo {
+  font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
+  margin: 0 auto;
+}
+
+.header_title {
+  font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
+  margin: 20px auto 0;
+}
+
+.header__theme-menu {
+  margin: 25px auto;
+  font-size: 14px;
+}
+
+.theme-menu__button {
+  border: none;
+}
+
+.cards {
+  display: flex;
+  gap: 52px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  border: 2px solid var(--main-color);
+  
+}
+
+.card_title {
+  font-size: 18px;
+  padding-inline-start: 10px;
+  padding-inline-end: 100px;
+}
+
+.card_picture {
+  width: 100%;
+}
+
+.card_content {
+  display: flex;
+  gap: 25px;
+  flex-direction: column;
+  padding: 25px;
+}
+
+.card_text {
+  display: flex;
+  gap: 27px;
+  flex-direction: column;
+}
+
+.card_buttons {
+  justify-self: end;
+  align-self: end;
+  width: 169px;
+  height: 38px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.card__icon-button {
+  border: none;
+}
+
+.card__like-button {
+  width: 169px;
+  border: 2px solid var(--main-color);
+  font-family: var(--accent-font);
+  font-size: 14px;
+}
+
+.sparks {
+  opacity: 0;
+}
+
+.footer {
+  justify-self: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  margin-block-start: 50px;
+  margin-block-end: 103px;
+  font-family: var(--accent-font);
+  font-size: 14px;
+  width: 335px;
+  height: 51px;
+  border: 2px solid var(--main-color);
+}
+
+.footer_button {
+  border: none;
+}
+
+@media (width < 376px) {
+  .header {
+    height: 327px;
+  }
+
+  .cards {
+    gap: 52px;
+  }
+
+  .footer {
+    margin-block-start: 52px;
+    margin-block-end: 100px;
+    width: 306px;
+    height: 80px;
+  }
 }
