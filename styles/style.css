@@ -237,6 +237,7 @@
 }
 
 .footer_button {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -255,10 +256,6 @@
 .footer_button:focus-visible {
   outline: none;
   animation: shadow 0.3s ease forwards;
-}
-
-.footer_button {
-  position: relative;
 }
 
 .footer_button::after {
@@ -363,4 +360,32 @@
   .watermark {
     inset-inline-end: 13px;
   }
+}
+
+.filter-bright {
+  filter: brightness(200%);
+}
+
+.filter-contrast {
+  filter: contrast(50%);
+}
+
+.filter-blur {
+  filter: blur(0.1rem);
+}
+
+.filter-opacity {
+  filter: opacity(0.8);
+}
+
+.filter-grayscale {
+  filter: grayscale(0.6);
+}
+
+.filter-saturate {
+  filter: saturate(70%);
+}
+
+.filter-mix {
+  filter: invert(1) hue-rotate(180deg);
 }
